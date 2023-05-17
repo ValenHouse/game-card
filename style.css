@@ -1,0 +1,62 @@
+body {
+  background-image: url(images/лого.jpg);
+  background-size: 100vw 100vh;
+}
+
+.card {
+  cursor: default;
+  margin-right: 20px;
+  transition: 1s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+  box-shadow: 0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+}
+
+.game-card {
+  height: 100vh;
+  font-family: 'Open Sans', monospace;
+}
+
+.card-header {
+  background-color: rgba(127, 255, 212, 0.301);
+}
+
+.card-footer {
+  background-color: rgba(127, 255, 212, 0.301);
+}
+
+.card-body {
+  background-color: rgba(207, 221, 14, 0.151);
+}
+
+.form-group {
+  margin-inline: auto;
+  padding: 5px;
+  width: auto;
+}
+
+label {
+  padding: 0px 10px 0px 0px;
+}
+
+#btnRetry {
+  text-decoration: none;
+  color: rgb(37, 2, 194);
+}
+
+#btnRetry:hover {
+  color: rgb(255, 18, 1);
+  font-weight: bold;
+}
+
+#btnEqual {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.hidden {
+  display: none;
+}

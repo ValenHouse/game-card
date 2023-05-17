@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game / Угадайка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row game-card align-items-center">
+            <div class="col col-md-6 offset-md-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <p class="m-0 title-page">Игра УГАДАЙКА</p>
+                        <p class="m-0 value-range hidden">Диапазон значений</p> <!-- hidden -->
+                        <p class="m-0 terms hidden">Условия</p> <!-- hidden -->
+                        <p class="m-0 question hidden">Вопрос № <span id="orderNumberField">5</span></p> <!-- hidden -->
+                    </div>
+
+                    <div class="card-body">
+
+                        <p class="valueRange hidden">Введите минимальное и максимальное значение числа для игры (от -999 до 999)</p> <!-- hidden -->
+                        <p class="guessNumber hidden"><span id="guessNumber"></span></p> <!-- hidden -->
+
+                        <form class="form-inline hidden"> <!-- hidden -->
+                            <div class="form-group">
+                                <label for="formGroupInput">От</label>
+                                <input type="text" class="form-control" id="formInputMin" placeholder="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupInput2">До</label>
+                                <input type="text" class="form-control" id="formInputMax" placeholder="100">
+                            </div>
+                        </form>
+
+                        <div class="row no-gutters hidden"> <!-- hidden -->
+                            <div class="col">
+                                <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-body">
+                        <button class="btn btn-info hidden" id="btnLess">&#129047;<br>меньше</button> <!-- hidden -->
+                        <button class="btn btn-success btn-lg hidden" id="btnEqual">Верно!</button> <!-- hidden -->
+                        <button class="btn btn-info hidden" id="btnOver">больше<br>&#129045;</button> <!-- hidden -->
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="btn btn-success btnTobegin" id="btnTobegin">НАЧАТЬ ИГРУ</button>
+                        <button class="btn btn-success hidden" id="btnProceed">ПРОДОЛЖИТЬ</button> <!-- hidden -->
+                        <button class="btn btn-success hidden" id="btnPlay">ИГРАТЬ</button> <!-- hidden -->
+                        <button class="btn btn-link hidden" id="btnRetry">Заново</button> <!-- hidden -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
